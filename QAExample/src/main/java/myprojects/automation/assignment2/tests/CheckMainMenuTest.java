@@ -58,11 +58,12 @@ public class CheckMainMenuTest extends BaseScript {
             Thread.sleep(2500);
             driver.navigate().refresh();
             ttlTextAfter = driver.findElement(pageTitle3).getText();
-            //Check section location and write
+            //Check section location and write title
             if (ttlTextBefore.equals(ttlTextAfter))
                 System.out.println(driver.findElement(pageTitle3).getText());
             else
                 System.out.println("Done");
         }
+        driver.close();
     }
 }
